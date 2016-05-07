@@ -50,6 +50,10 @@ header,
 	/*column-gap: 40px;*/
 }
 
+.take-space {
+	width: 1%;
+}
+
 #big-logo {
 	/*width: 400px;*/
 	height: 90%;
@@ -61,9 +65,48 @@ header,
 	margin-right: auto;	
 }
 
-.take-space {
-	width: 1%;
+#nav-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	float: right;
 }
+
+li {
+	float: left;
+}
+
+li .nav-link {
+	height: 80px;
+	padding: 30px 0 8px 16px;
+	display: block;
+	width: 100px;
+	text-decoration: none;
+}
+
+li .nav-link:hover {
+	background-color: #555;
+	color: white;
+}
+
+#nav-list li .nav-link {
+	color: rgba(255, 255, 255, 0.8);
+}
+
+#home-button {
+	float: left;
+	height: 80px;
+	padding: 12px 8px 8px 16px;
+	display: block;
+	width: 180px;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 1);
+	font-size: 36px;
+}
+
+/*#nav-list li .nav-link:link {
+	color: rgba(255, 255, 255, 0.8);
+}*/
 
 /*
 * {
