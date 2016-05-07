@@ -1,11 +1,12 @@
 * {
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 }
 
 body {
 	/*height: 100%;*/
 	margin: 0;
 	padding-top: 700px;
+	/*padding-top: 70%;*/
 	font-size: 15px;
 	color: rgba(255, 255, 255, 0.7);
 	background-color: rgba(82, 73, 92, 1);
@@ -13,15 +14,15 @@ body {
 
 header {
 	height: 700px;
-	/*height: 100vh;*/
-	/*height: 100%;*/
+	/*height: 70%;*/
 	padding-top: 50px;
 	background: white;
 }
 
 #header-label {
 	display: table;
-	font-size: 25vh;
+	/*font-size: 25vh;*/
+	font-size: 25vmin;
 	color: rgba(43, 51, 42, 1);
 	/*margin-right: auto;*/
 	/*margin-left: auto;*/
@@ -38,8 +39,14 @@ header {
 	/*height: 100%;*/
 	/*height: 4vw;*/
 	/*border: 1px solid black;*/
-	padding-left: 50px;
+	
+	/*padding-left: 25px;*/
+
 	/*margin-right: 50px;*/
+}
+
+.remove-end-space {
+	letter-spacing: 1px;
 }
 
 #header-span {
@@ -178,4 +185,4 @@ header {
 	margin-bottom: -80px;
 	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
 	/*display: block;*/
-}
+/*}*/
