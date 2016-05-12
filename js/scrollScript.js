@@ -4,13 +4,16 @@ var header = $("header");
 var mainNavHeight = $(".main-nav").height();
 var padding = $(window).height() - mainNavHeight;
 
-// body.css("padding-top", padding);
-// header.css("height", padding);
-// $(window).resize(function() {
-// 	padding = $(window).height() - mainNavHeight;
-// 	body.css("padding-top", padding);
-// 	header.css("height", padding);
-// });
+/*
+Sets up navigation bar so it starts flush with the bottom of the screen
+*/
+body.css("padding-top", padding);
+header.css("height", padding);
+$(window).resize(function() {
+	padding = $(window).height() - mainNavHeight;
+	body.css("padding-top", padding);
+	header.css("height", padding);
+});
 
 //Makes navigation bar stick at top when scrolling down.
 //Yayayyyayayayya.

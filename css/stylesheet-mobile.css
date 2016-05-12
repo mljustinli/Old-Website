@@ -1,8 +1,7 @@
 #header-label {
 	color: pink;
-	text-transform: lowercase;
 }
 
-body {
-	color: yellow;
+#header-label {
+	font-size: 15vmin;
 }
