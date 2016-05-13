@@ -1,7 +1,35 @@
-#header-label {
-	color: pink;
+body {
+	padding-top: 0px;
 }
 
 #header-label {
+	color: pink;
 	font-size: 15vmin;
+	letter-spacing: 30px;
+}
+
+.main-nav {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 204px;
+	height: 100%;
+	/*margin-left: -40px;*/
+	/*display: none;*/
+}
+
+li .nav-link {
+	width: 188px;
+}
+
+#home-button {
+	/*border-bottom: solid;*/
+}
+
+#nav-line {
+	display: block;
+	width: 80%;
+	height: 2px;
+	background: rgb(255, 255, 255);
+	border: none;
 }

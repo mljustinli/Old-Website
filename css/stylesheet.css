@@ -18,6 +18,7 @@ header {
 	/*height: 70%;*/
 	padding-top: 50px;
 	background: white;
+	position: relative;
 }
 
 #header-label {
@@ -132,7 +133,7 @@ li .nav-link:hover {
 
 #home-button {
 	float: left;
-	height: 80px;
+	height: 60px;
 	padding: 12px 8px 8px 16px;
 	display: block;
 	width: 180px;
@@ -141,6 +142,9 @@ li .nav-link:hover {
 	font-size: 36px;
 }
 
+#nav-line {
+	display: none;
+}
 
 
 /*#nav-list li .nav-link:link {
