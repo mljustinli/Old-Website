@@ -1,3 +1,4 @@
+
 * {
 	/*box-sizing: border-box;*/
 	/*box-sizing: content-box;*/
@@ -55,6 +56,10 @@ header {
 #header-span {
 	display: table-cell;
 	vertical-align: middle;
+}
+
+#expand-menu {
+	display: none;
 }
 
 .main-nav,
