@@ -4,7 +4,7 @@ $(document).keypress(function(e) {
 	if (e.which == 13 && $(".main-nav").css("position") != "relative") {
 		// e.preventDefault();
 		// switchState();
-		alert(isOpen);
+		// alert(isOpen);
 		// alert(e.target.attr("class"));
 	}
 });
@@ -33,13 +33,15 @@ $(document).on("click", function(e) {
 	// alert(e.target.id);
 
 	// $(document).alert(isOpen + " " + $(e.target).attr("class") + " ");
-	if (!isOpen && e.target.id == "expand-menu") {
+	// alert(e.target.id + " " + $(e.target).hasClass("expand-menu-bar"));
+	// || $(e.target).hasClass("expand-menu-bar")
+	// if (!isOpen && e.target.id == "expand-menu") {
+	if (!isOpen && $(e.target).hasClass("expand-menu-bar") || e.target.id === "expand-menu") {
 		switchState();
 	} else if (isOpen 
 		&& !$(e.target).hasClass("main-nav") 
 		// && $(e.target).parents(".main-nav").length == 0 
-		&& e.target.id != "expand-menu"
-		) {
+		&& e.target.id != "expand-menu") {
 		switchState();
 	}
 });
@@ -51,12 +53,14 @@ function switchState() {
 		}, 500);
 		$("html body").css("overflow", "visible");
 		$("#expand-menu").css("display", "inline-block");
+		isOpen = false;
 	} else {
 		$(".main-nav").animate({
 			marginLeft: "0px"
 		}, 500);
 		$("html body").css("overflow", "hidden");
 		$("#expand-menu").css("display", "none");
+		isOpen = true;
 	}
-	isOpen = !isOpen;
+	// isOpen = !isOpen;
 }

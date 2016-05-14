@@ -25,7 +25,8 @@ function setNav() {
 		body.css("padding-top", padding);
 		header.css("height", padding);
 	} else {
-		body.css("padding-top", $(window).height() - 100);
+		// body.css("padding-top", $(window).height() - 100);
+		body.css("padding-top", 0);
 	}
 }
 
