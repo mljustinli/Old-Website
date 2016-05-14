@@ -1,7 +1,8 @@
 
-* {
-	/*box-sizing: border-box;*/
-	/*box-sizing: content-box;*/
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
 }
 
 body {
