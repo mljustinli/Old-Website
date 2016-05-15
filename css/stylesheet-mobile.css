@@ -12,7 +12,7 @@ header {
 }
 
 #header-label {
-	color: pink;
+	/*color: pink;*/
 	font-size: 15vmin;
 	letter-spacing: 30px;
 	position: relative;
